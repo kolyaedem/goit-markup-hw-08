@@ -1,0 +1,35 @@
+.container-top {
+  padding-top: 0;
+}
+
+.doing__list {
+  display: flex;
+  padding: 0;
+}
+
+.doing__title {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  color: var(--button-color);
+}
+
+.doing__item {
+  position: relative;
+  margin-right: 30px;
+  z-index: -1;
+}
+
+.doing__item :last-child {
+  margin-right: 0;
+}
