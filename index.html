@@ -15,8 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -24,9 +23,28 @@
     <header class="page-header">
       <div class="container header-container">
         <nav class="header__nav">
-          <a class="header__link" href="./index.html">Web<span class="header__link--black">Studio</span></a>
+          <a class="header__link" href="./index.html"
+            >Web<span class="header__link--black">Studio</span></a
+          >
+          <button
+            class="header__button is-open"
+            aria-expanded="false"
+            aria-controls="menu"
+            aria-label="Перемикач меню"
+            data-menu-button
+          >
+            <svg width="40" height="40">
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button>
+        </nav>
 
-          <ul class="list menu__list">
+        <div class="menu is-open" id="menu" data-menu>
+          
+        </div>
+
+          <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link menu__link--current" href="./index.html">Студія</a>
             </li>
@@ -37,24 +55,28 @@
               <a class="menu__link" href="">Контакти</a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="list contact__list">
-          <li class="menu__item">
-            <a class="menu__link menu__link--svg" href="mailto:info@devstudio.com" target="_blank">
-              <svg class="svg-header" width="16" height="12">
-                <use href="./images/sprite.svg#envelope"></use></svg              >info@devstudio.com
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--svg" href="tel:+380961111111" title="Зателефонувати">
-              <svg class="svg-header" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="contact__list">
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--svg"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+              >
+                <svg class="svg-header" width="16" height="12">
+                  <use href="./images/sprite.svg#envelope"></use></svg                >info@devstudio.com
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--svg" href="tel:+380961111111" title="Зателефонувати">
+                <svg class="svg-header" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        
       </div>
     </header>
 
@@ -220,7 +242,11 @@
           <h2 class="upper-title">Чим ми займаємося</h2>
           <ul class="doing__list">
             <li class="list-item doing__item">
-              <img src="./images/laptop.jpg" alt="Laptop" width="370" />
+              <img"
+                src="./images/laptop.jpg"
+                alt="Laptop"
+                width="370"
+              />
               <p class="doing__title">десктопні додатки</p>
             </li>
             <li class="list-item doing__item">
@@ -246,7 +272,7 @@
                   src="./images/igor.jpg"
                   alt="Ігор Дем'яненко"
                   title="Ігор Дем'яненко"
-                  width="270"
+                  
                 />
                 <div class="section__team">
                   <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -284,7 +310,7 @@
                 </div>
               </li>
               <li class="team__item">
-                <img src="./images/olga.jpg" alt="Ольга Рєпіна" title="Ольга Рєпіна" width="270" />
+                <img src="./images/olga.jpg" alt="Ольга Рєпіна" title="Ольга Рєпіна" />
                 <div class="section__team">
                   <h3 class="team__title">Ольга Рєпіна</h3>
                   <p class="team__subtitle">Frontend Developer</p>
@@ -325,7 +351,7 @@
                   src="./images/mykola.jpg"
                   alt="Микола Тарасов"
                   title="Микола Тарасов"
-                  width="270"
+                  
                 />
                 <div class="section__team">
                   <h3 class="team__title">Микола Тарасов</h3>
@@ -367,7 +393,7 @@
                   src="./images/mikhailo.jpg"
                   alt="Михайло Єрмаков"
                   title="Михайло Єрмаков"
-                  width="270"
+                  
                 />
                 <div class="section__team">
                   <h3 class="team__title">Михайло Єрмаков</h3>
@@ -466,7 +492,7 @@
       <div class="container">
         <div class="footer__list">
           <div class="footer__item">
-            <a class="footer__link" href="./index.html" 
+            <a class="footer__link" href="./index.html"
               >Web<span class="footer__link--white">Studio</span></a
             >
             <address>
@@ -481,9 +507,7 @@
                   >
                 </li>
                 <li class="address__item">
-                  <a class="address__link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                  <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="address__item">
                   <a class="address__link" href="tel:+380961111111" title="Зателефонувати"
@@ -552,7 +576,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
