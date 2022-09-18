@@ -1,4 +1,8 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
+  .main__section .container {
+    padding: 0;
+  }
+  
   .main__section {
       margin: 0 auto;
       padding: 118px 60px;      
@@ -13,7 +17,7 @@
     }
     
     .main__title {
-      width: 360px;
+      
       margin: 0 auto;
       margin-bottom: 30px;
       display: inline-block;

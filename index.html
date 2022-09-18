@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body>
+  <body modal-open>
     <!-- header -->
     <header class="page-header">
       <div class="container header-container">
@@ -40,10 +40,8 @@
           </button>
         </nav>
 
-        <div class="menu is-open" id="menu" data-menu>
-          
-        </div>
-
+        <div class="menu is-open" id="menu" data-menu>             
+        
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link menu__link--current" href="./index.html">Студія</a>
@@ -76,6 +74,7 @@
               >
             </li>
           </ul>
+        </div>
         
       </div>
     </header>
@@ -243,9 +242,14 @@
           <ul class="doing__list">
             <li class="list-item doing__item">
               <img"
+                srcset="./images/mobile/lab1x.jpg 1x, 
+                ./images/mobile/lab1x.jpg 2x,
+                ./images/tablet/lab1x.jpg 1x, 
+                ./images/tablet/lab1x.jpg 2x,
+                ./images/desktop/laptop2x.jpg 2x"
                 src="./images/laptop.jpg"
-                alt="Laptop"
-                width="370"
+                alt="Laptop" 
+                width="370"               
               />
               <p class="doing__title">десктопні додатки</p>
             </li>
