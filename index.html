@@ -40,7 +40,45 @@
           </button>
         </nav>
 
-        <div class="menu is-open" id="menu" data-menu>             
+        <div class="menu is-open" id="menu" data-menu> 
+
+          <ul class="menumob__list">
+            <li class="menumob__item">
+              <a class="menumob__link menumob__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="menumob__item">
+              <a class="menumob__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menumob__item">
+              <a class="menumob__link" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="contactmob__list">
+            <li class="contactmob__item ">
+              <a class="contactmob__link contactmob__link--current" href="tel:+380961111111" title="Зателефонувати">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="contactmob__item">
+              <a
+                class="contactmob__link"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+              >                
+                info@devstudio.com
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="mobile__list">
+            <li class="mobile__item"><a href="" class="mobile__link">Instagram</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Twitter</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Facebook</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">LinkedIn</a></li>
+          </ul>
+        </div>            
         
           <ul class="menu__list">
             <li class="menu__item">
@@ -74,7 +112,8 @@
               >
             </li>
           </ul>
-        </div>
+
+
         
       </div>
     </header>
@@ -242,11 +281,6 @@
           <ul class="doing__list">
             <li class="list-item doing__item">
               <img"
-                srcset="./images/mobile/lab1x.jpg 1x, 
-                ./images/mobile/lab1x.jpg 2x,
-                ./images/tablet/lab1x.jpg 1x, 
-                ./images/tablet/lab1x.jpg 2x,
-                ./images/desktop/laptop2x.jpg 2x"
                 src="./images/laptop.jpg"
                 alt="Laptop" 
                 width="370"               
@@ -272,12 +306,29 @@
             <h2 class="upper-title">Наша команда</h2>
             <ul class="team__list">
               <li class="team__item">
-                <img
+                <picture>
+                  <source
+                  srcset="./images/igor1x.jpg 1x,
+                  ./images/igor2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/tablet/igor1x.jpg 1x,
+                  ./images/tablet/igor2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  >
+                  <source
+                  srcset="./images/mobile/igor1x.jpg 1x,
+                  ./images/mobile/igor2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+                  <img
                   src="./images/igor.jpg"
                   alt="Ігор Дем'яненко"
-                  title="Ігор Дем'яненко"
-                  
+                  title="Ігор Дем'яненко"                  
                 />
+                </picture>
+
                 <div class="section__team">
                   <h3 class="team__title">Ігор Дем'яненко</h3>
                   <p class="team__subtitle">Product Designer</p>
@@ -314,7 +365,25 @@
                 </div>
               </li>
               <li class="team__item">
-                <img src="./images/olga.jpg" alt="Ольга Рєпіна" title="Ольга Рєпіна" />
+                <picture>
+                  <source
+                  srcset="./images/olga1x.jpg 1x,
+                  ./images/olga2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/tablet/olga1x.jpg 1x,
+                  ./images/tablet/olga2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  >
+                  <source
+                  srcset="./images/mobile/olga1x.jpg 1x,
+                  ./images/mobile/olga2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+                  <img src="./images/olga.jpg" alt="Ольга Рєпіна" title="Ольга Рєпіна" />
+                </picture>
+                
                 <div class="section__team">
                   <h3 class="team__title">Ольга Рєпіна</h3>
                   <p class="team__subtitle">Frontend Developer</p>
@@ -351,12 +420,29 @@
                 </div>
               </li>
               <li class="team__item">
-                <img
+                <picture>
+                  <source
+                  srcset="./images/mykola1x.jpg 1x,
+                  ./images/mykola2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/tablet/mykola1x.jpg 1x,
+                  ./images/tablet/mykola2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  >
+                  <source
+                  srcset="./images/mobile/mykola1x.jpg 1x,
+                  ./images/mobile/mykola2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+                  <img
                   src="./images/mykola.jpg"
                   alt="Микола Тарасов"
-                  title="Микола Тарасов"
-                  
+                  title="Микола Тарасов"                  
                 />
+                </picture>
+
                 <div class="section__team">
                   <h3 class="team__title">Микола Тарасов</h3>
                   <p class="team__subtitle">Marketing</p>
@@ -393,12 +479,29 @@
                 </div>
               </li>
               <li class="team__item">
-                <img
+                <picture>
+                  <source
+                  srcset="./images/mikhailo1x.jpg 1x,
+                  ./images/mikhailo2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/tablet/mikhailo1x.jpg 1x,
+                  ./images/tablet/mikhailo2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  >
+                  <source
+                  srcset="./images/mobile/mikhailo1x.jpg 1x,
+                  ./images/mobile/mikhailo2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+                  <img
                   src="./images/mikhailo.jpg"
                   alt="Михайло Єрмаков"
-                  title="Михайло Єрмаков"
-                  
+                  title="Михайло Єрмаков"                  
                 />
+                </picture>
+
                 <div class="section__team">
                   <h3 class="team__title">Михайло Єрмаков</h3>
                   <p class="team__subtitle">UI Designer</p>
