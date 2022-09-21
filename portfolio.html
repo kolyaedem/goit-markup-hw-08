@@ -27,62 +27,27 @@
             >Web<span class="header__link--black">Studio</span></a
           >
           <button
-            class="header__button is-open"
+            class="header__button js-open-menu is-open"
             aria-expanded="false"
-            aria-controls="menu"
+            aria-controls="mobile-menu"
             aria-label="Перемикач меню"
             data-menu-button
           >
             <svg width="40" height="40">
               <use class="icon-menu" href="./images/sprite.svg#menu"></use>
-              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
             </svg>
           </button>
         </nav>
 
-        <div class="menu is-open is-hidden" id="menu" data-menu> 
-
-          <ul class="menumob__list">
-            <li class="menumob__item">
-              <a class="menumob__link menumob__link--current" href="./index.html">Студія</a>
-            </li>
-            <li class="menumob__item">
-              <a class="menumob__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="menumob__item">
-              <a class="menumob__link" href="">Контакти</a>
-            </li>
-          </ul>
-
-          <ul class="contactmob__list">
-            <li class="contactmob__item ">
-              <a class="contactmob__link contactmob__link--current" href="tel:+380961111111" title="Зателефонувати">
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="contactmob__item">
-              <a
-                class="contactmob__link"
-                href="mailto:info@devstudio.com"
-                target="_blank"
-              >                
-                info@devstudio.com
-              </a>
-            </li>
-
-          </ul>
-
-          <ul class="mobile__list">
-            <li class="mobile__item"><a href="" class="mobile__link">Instagram</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">Twitter</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">Facebook</a></li>
-            <li class="mobile__item"><a href="" class="mobile__link">LinkedIn</a></li>
-          </ul>
-        </div>            
-        
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button class="header__button js-close-menu" type="button">
+            <svg width="40" height="40">
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="./index.html">Студія</a>
+              <a class="menu__link " href="./index.html">Студія</a>
             </li>
             <li class="menu__item">
               <a class="menu__link menu__link--current" href="./portfolio.html">Портфоліо</a>
@@ -93,9 +58,21 @@
           </ul>
 
           <ul class="contact__list">
-            <li class="menu__item">
+            <li class="contact__item">
               <a
-                class="menu__link menu__link--svg"
+                class="contact__link contact__link--accent contact__link--svg"
+                href="tel:+380961111111"
+                title="Зателефонувати"
+              >
+                <svg class="svg-header" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="contact__item">
+              <a
+                class="contact__link contact__link--svg"
                 href="mailto:info@devstudio.com"
                 target="_blank"
               >
@@ -103,18 +80,15 @@
                   <use href="./images/sprite.svg#envelope"></use></svg                >info@devstudio.com
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link menu__link--svg" href="tel:+380961111111" title="Зателефонувати">
-                <svg class="svg-header" width="10" height="16">
-                  <use href="./images/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
           </ul>
 
-
-        
+          <ul class="mobile__list">
+            <li class="mobile__item"><a href="" class="mobile__link">Instagram</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Twitter</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Facebook</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -147,8 +121,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/tehnokryak1x.jpg 1x,
-                    ./images/tehnokryak2x.jpg 2x"
+                    srcset="./images/desktop/tehnokryak1x.jpg 1x,
+                    ./images/desktop/tehnokryak2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -183,8 +157,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/neworleanvsgoldenstar1x.jpg 1x,
-                    ./images/neworleanvsgoldenstar2x.jpg 2x"
+                    srcset="./images/desktop/neworleanvsgoldenstar1x.jpg 1x,
+                    ./images/desktop/neworleanvsgoldenstar2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -222,8 +196,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/seafood1x.jpg 1x,
-                    ./images/seafood2x.jpg 2x"
+                    srcset="./images/desktop/seafood1x.jpg 1x,
+                    ./images/desktop/seafood2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -258,8 +232,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/prime1x.jpg 1x,
-                    ./images/prime2x.jpg 2x"
+                    srcset="./images/desktop/prime1x.jpg 1x,
+                    ./images/desktop/prime2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -293,8 +267,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/boxes1x.jpg 1x,
-                    ./images/boxes2x.jpg 2x"
+                    srcset="./images/desktop/boxes1x.jpg 1x,
+                    ./images/desktop/boxes2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -328,8 +302,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/inspiration1x.jpg 1x,
-                    ./images/inspiration2x.jpg 2x"
+                    srcset="./images/desktop/inspiration1x.jpg 1x,
+                    ./images/desktop/inspiration2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -367,8 +341,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/limitededition1x.jpg 1x,
-                    ./images/limitededition2x.jpg 2x"
+                    srcset="./images/desktop/limitededition1x.jpg 1x,
+                    ./images/desktop/limitededition2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -405,8 +379,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/lab1x.jpg 1x,
-                    ./images/lab2x.jpg 2x"
+                    srcset="./images/desktop/lab1x.jpg 1x,
+                    ./images/desktop/lab2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -441,8 +415,8 @@
                 <div class="overlay__img">
                   <picture>
                     <source
-                    srcset="./images/business1x.jpg 1x,
-                    ./images/business2x.jpg 2x"
+                    srcset="./images/desktop/business1x.jpg 1x,
+                    ./images/desktop/business2x.jpg 2x"
                     media="(min-width: 1200px)"
                     >
                     <source
@@ -482,68 +456,69 @@
     <footer>
       <div class="container">
         <div class="footer__list">
-          <div class="footer__item">
-            <a class="footer__link" href="./index.html" 
-              >Web<span class="footer__link--white">Studio</span></a
-            >
-            <address>
-              <ul class="address__list">
-                <li class="address__item">
-                  <a
-                    class="address__link--map"
-                    href="https://goo.gl/maps/jDnGQvyxPjPz1V8t5"
-                    target="_blank"
-                    rel="noopener nofollow"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+          <div class="footer-wrapper">
+            <div class="footer__item">
+              <a class="footer__link" href="./index.html"
+                >Web<span class="footer__link--white">Studio</span></a
+              >
+              <address>
+                <ul class="address__list">
+                  <li class="address__item">
+                    <a
+                      class="address__link address__link--map"
+                      href="https://goo.gl/maps/jDnGQvyxPjPz1V8t5"
+                      target="_blank"
+                      rel="noopener nofollow"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="tel:+380961111111" title="Зателефонувати"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+  
+            <div class="footer__item">
+              <p class="footer__title">приєднуйтесь</p>
+              <ul class="social-list">
+                <li>
+                  <a class="social-link social__link--footer" href="">
+                    <svg class="item-svg" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__item">
-                  <a class="address__link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li>
+                  <a class="social-link social__link--footer" href="">
+                    <svg class="item-svg" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__item">
-                  <a class="address__link" href="tel:+380961111111" title="Зателефонувати"
-                    >+38 096 111 11 11</a
-                  >
+                <li>
+                  <a class="social-link social__link--footer" href="">
+                    <svg class="item-svg" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link social__link--footer" href="">
+                    <svg class="item-svg" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
 
-          <div class="footer__item">
-            <p class="footer__title">приєднуйтесь</p>
-            <ul class="social-list">
-              <li class="list-item">
-                <a class="social-link social__link--footer" href="">
-                  <svg class="item-svg" width="20" height="20">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="social-link social__link--footer" href="">
-                  <svg class="item-svg" width="20" height="20">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="social-link social__link--footer" href="">
-                  <svg class="item-svg" width="20" height="20">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="social-link social__link--footer" href="">
-                  <svg class="item-svg" width="20" height="20">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
 
           <div class="footer__item--form">
             <p class="footer__title">підпишіться на розсилку</p>
